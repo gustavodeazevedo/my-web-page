@@ -2,10 +2,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react({
-        // Configurar o plugin react para incluir arquivos .js
+
         include: "**/*.{jsx,js}",
     })],
     resolve: {
@@ -14,9 +13,11 @@ export default defineConfig({
         },
         extensions: ['.js', '.jsx', '.json'],
     },
-    // Configuração de servidor de desenvolvimento
+
     server: {
-        port: 3000,
+        port: 5173,
         open: true,
+        host: '0.0.0.0', // Permite acesso externo
+        allowedHosts: ['stale-seas-act.loca.lt', 'short-toes-melt.loca.lt', 'cruel-teams-remain.loca.lt', 'curly-peas-search.loca.lt'],
     },
 });
