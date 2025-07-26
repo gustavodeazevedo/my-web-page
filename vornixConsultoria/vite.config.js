@@ -17,7 +17,6 @@ export default defineConfig({
     server: {
         port: 5173,
         open: true,
-        host: '0.0.0.0', // Permite acesso externo
         allowedHosts: ['stale-seas-act.loca.lt', 'short-toes-melt.loca.lt', 'cruel-teams-remain.loca.lt', 'curly-peas-search.loca.lt'],
     },
 });
